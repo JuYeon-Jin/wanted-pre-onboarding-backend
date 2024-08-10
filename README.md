@@ -11,6 +11,7 @@
 ### 프로젝트 디렉토리 구
 <br>
 
+```
 ┌── config/
 │   └── MyBatisConfig.java
 ├── controller/
@@ -26,7 +27,7 @@
 │   └── UpdatePostDto.java
 └── service/
     └── ApplyService.java
-
+```
 
 <br><br>
 
