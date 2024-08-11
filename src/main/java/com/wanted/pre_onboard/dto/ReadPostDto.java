@@ -19,7 +19,7 @@ public class ReadPostDto {
     private int compensation;
     private String skillName;
     private String description;
-    private List<Integer> postIdList;
+    private List<CompanyPostsDto> postIdList;
 
     // 기본 생성자
     public ReadPostDto() {

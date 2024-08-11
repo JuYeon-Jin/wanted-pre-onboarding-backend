@@ -1,5 +1,6 @@
 package com.wanted.pre_onboard.dao;
 
+import com.wanted.pre_onboard.dto.CompanyPostsDto;
 import com.wanted.pre_onboard.dto.ReadPostDto;
 import com.wanted.pre_onboard.dto.ReadPostsDto;
 import org.apache.ibatis.annotations.*;
@@ -68,7 +69,7 @@ public interface ApplyDao {
      * @return List<Integer> 해당 회사의 모든 채용 공고 ID 목록
      */
     @Select("SELECT post_id FROM posts WHERE company_id = #{companyId}")
-    List<Integer> getPostIdList(@Param("companyId") int companyId);
+    List<CompanyPostsDto> getPostIdList(@Param("companyId") int companyId);
 
 
 

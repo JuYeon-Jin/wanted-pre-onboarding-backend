@@ -31,7 +31,7 @@ public class ApplyController {
             return ResponseEntity.ok(applyService.insertPost(dto));
         } catch (Exception e) {
             log.error(e.getLocalizedMessage());
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("실패");
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("채용 공고 등록 중 오류가 발생했습니다. 확인 후 다시 시도해 주세요.");
         }
     }
 
@@ -47,7 +47,7 @@ public class ApplyController {
             return ResponseEntity.ok(applyService.updatePost(dto));
         } catch (Exception e) {
             log.error(e.getLocalizedMessage());
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("실패");
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("채용 공고 수정 중 오류가 발생했습니다. 확인 후 다시 시도해 주세요.");
         }
     }
 
@@ -63,7 +63,7 @@ public class ApplyController {
             return ResponseEntity.ok(applyService.deletePost(postId));
         } catch (Exception e) {
             log.error(e.getLocalizedMessage());
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("실패");
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("채용 공고 삭제 중 오류가 발생했습니다. 확인 후 다시 시도해 주세요.");
         }
     }
 
@@ -107,7 +107,7 @@ public class ApplyController {
             return ResponseEntity.ok(applyService.apply(dto));
         } catch (Exception e) {
             log.error(e.getLocalizedMessage());
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("실패");
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("채용 공고 지원 중 오류가 발생했습니다. 확인 후 다시 시도해 주세요.");
         }
     }
 
