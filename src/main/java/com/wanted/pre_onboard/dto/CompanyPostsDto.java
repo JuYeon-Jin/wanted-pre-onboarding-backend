@@ -10,5 +10,5 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 public class CompanyPostsDto {
-    private List<Integer> postIdList;
+    private int postId;
 }
